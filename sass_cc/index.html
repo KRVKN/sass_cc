@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <title>Círculo de Crédito</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div>
+            <a href="#">
+                <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxu%0D%0Acz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz%0D%0ALm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMCA1MTAi%0D%0AIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InBy%0D%0AZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tl%0D%0AOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjI0O3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+%0D%0ADQo8Zz4NCgk8ZyBpZD0ibm90aWZpY2F0aW9ucyI+DQoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0z%0D%0AOTYsNDE0LjhjLTEuMy00LjYtMC42LTkuNSwxLjgtMTMuN2w2Ni4xLTExNS4yYzM3LTY0LjYsMjYu%0D%0AMS0xNDEuMS0yMS42LTE5My41Yy01LjMtNS44LTYuMy0xNC4zLTIuNC0yMS4yDQoJCQlsMi4xLTMu%0D%0AN2MxMC4xLTE3LjcsMy41LTQyLjEtMTQuMS01Mi4yYy0xNy43LTEwLjEtNDIuMS0zLjUtNTIuMiwx%0D%0ANC4xbC0yLjEsMy43Yy0zLjksNi44LTExLjgsMTAuMy0xOS40LDguNg0KCQkJQzI4NSwyNywyMTMu%0D%0ANCw1Ni4xLDE3Ni40LDEyMC44TDExMC4zLDIzNmMtMi40LDQuMS02LjMsNy4yLTEwLjksOC40bC01%0D%0ANS4yLDE1Yy00LjYsMS4zLTguNSw0LjMtMTAuOSw4LjRsMCwwDQoJCQljLTUsOC42LTIsMTkuNyw2%0D%0ALjcsMjQuNmwzNDQuNywxOTcuOGM4LjYsNSwxOS42LDIsMjQuNi02LjdsMCwwYzIuNC00LjIsMy05%0D%0ALjEsMS44LTEzLjdMMzk2LDQxNC44eiBNMjM0LjksNDkyLjcNCgkJCWMxNS40LDguOSwzMy43LDgu%0D%0ANyw0OC41LDEuMmMxMi44LTYuNSwxMy4yLTI0LjYsMC44LTMxLjdsLTQ3LjktMjcuNGMtMTIuNC03%0D%0ALjEtMjcuOCwyLjQtMjcsMTYuNg0KCQkJQzIxMC4zLDQ2OCwyMTkuNCw0ODMuOSwyMzQuOSw0OTIu%0D%0AN3oiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" alt="">    
+            </a> 
+        </div>
+    </nav>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Buscador de Empresas">
+        <a class="search-btn" href="#">
+            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxu%0D%0Acz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz%0D%0ALm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDU3IDU3IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NyA1NzsiIHhtbDpzcGFjZT0icHJlc2Vy%0D%0AdmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0IzQjVCNzt9DQo8L3N0%0D%0AeWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTU1LjEsNTEuOUw0MS42LDM3LjhDNDUuMSwzMy42%0D%0ALDQ3LDI4LjQsNDcsMjNDNDcsMTAuMywzNi43LDAsMjQsMFMxLDEwLjMsMSwyM3MxMC4zLDIzLDIz%0D%0ALDIzDQoJYzQuOCwwLDkuMy0xLjQsMTMuMi00LjJMNTAuOCw1NmMwLjYsMC42LDEuMywwLjksMi4y%0D%0ALDAuOWMwLjgsMCwxLjUtMC4zLDIuMS0wLjhDNTYuMyw1NSw1Ni4zLDUzLjEsNTUuMSw1MS45eiBN%0D%0AMjQsNg0KCWM5LjQsMCwxNyw3LjYsMTcsMTdzLTcuNiwxNy0xNywxN1M3LDMyLjQsNywyM1MxNC42%0D%0ALDYsMjQsNnoiLz4NCjwvc3ZnPg0K" alt="">
+        </a>
+    </div>
+    <div class="list">
+            <div id="a">
+                <ul> A
+                    <li>Ale de los Santos</li>
+                    <li class="subtitle">Círculo de Crédito</li>
+                    <hr>
+                    <li>Alejandro Sánchez</li>
+                    <li class="subtitle">Círculo de Crédito</li>
+                </ul>
+            </div>
+            <div id="b">
+                <ul> B
+                    <li>Basic Lorem</li>
+                    <li class="subtitle">Beatriz Moreno</li>
+                    <hr>
+                    <li>Blink 18</li>
+                    <li class="subtitle">Tom DeLonge</li>
+                </ul>
+            </div>
+            <div id="c">
+                <ul> C
+                    <li>Círculo de crédito</li>
+                    <li class="subtitle">Ale de los Santos</li>
+                    <hr>
+                    <li>Capital Humano S.A. de C.V</li>
+                    <li class="subtitle">Carolina B.</li>
+                </ul>
+            </div>
+            <div id="d">
+                <ul> D
+                    <li>D Staffing Personal S.A. de C.V</li>
+                    <li class="subtitle">Jorge Gasca Barrios</li>
+                    <hr>
+                    <li>DPM Capital Humano</li>
+                    <li class="subtitle">Rubén Morales Leyva</li>
+                    <li class="subtitle">Ricardo Viveros García</li>
+                    <li class="subtitle">Martha Radilla Rodríguez</li>
+                </ul>
+            </div>
+            <div id="e">
+                <ul> E
+                    <li>Erase una vez</li>
+                    <li class="subtitle">Jorge Gasca Barrios</li>
+                    <hr>
+                    <li>Empoderamiento Humano</li>
+                    <li class="subtitle">Rubén Morales Leyva</li>
+                    <li class="subtitle">Ricardo Viveros García</li>
+                    <li class="subtitle">Martha Radilla Rodríguez</li>
+                </ul>
+            </div>
+            <div id="f">
+                <ul> F
+                    <li>f</li>
+                    <li class="subtitle">f</li>
+                    <hr>
+                    <li>f</li>
+                    <li class="subtitle">f</li>
+                </ul>
+            </div>
+            <div id="g">
+                <ul> G
+                    <li>g</li>
+                    <li class="subtitle">g</li>
+                    <hr>
+                    <li>g</li>
+                    <li class="subtitle">g</li>
+                </ul>
+            </div>
+            <div id="h">
+                <ul> H
+                    <li>h</li>
+                    <li class="subtitle">h</li>
+                    <hr>
+                    <li>h</li>
+                    <li class="subtitle">h</li>
+                </ul>
+            </div>
+            <div id="i">
+                <ul> I
+                    <li>i</li>
+                    <li class="subtitle">i</li>
+                    <hr>
+                    <li>i</li>
+                    <li class="subtitle">i</li>
+                </ul>
+            </div>
+            <div id="j">
+                <ul> J
+                    <li>j</li>
+                    <li class="subtitle">j</li>
+                    <hr>
+                    <li>j</li>
+                    <li class="subtitle">j</li>
+                </ul>
+            </div>
+            <div id="k">
+                <ul> K
+                    <li>k</li>
+                    <li class="subtitle">k</li>
+                    <hr>
+                    <li>k</li>
+                    <li class="subtitle">k</li>
+                </ul>
+            </div>
+            <div id="l">
+                <ul> L
+                    <li>l</li>
+                    <li class="subtitle">l</li>
+                    <hr>
+                    <li>l</li>
+                    <li class="subtitle">l</li>
+                </ul>
+            </div>
+            <div id="m">
+                <ul> M
+                    <li>m</li>
+                    <li class="subtitle">m</li>
+                    <hr>
+                    <li>m</li>
+                    <li class="subtitle">m</li>
+                </ul>
+            </div>
+            <div id="n">
+                <ul> N
+                    <li>n</li>
+                    <li class="subtitle">n</li>
+                    <hr>
+                    <li>n</li>
+                    <li class="subtitle">n</li>
+                </ul>
+            </div>
+            <div id="o">
+                <ul> O
+                    <li>o</li>
+                    <li class="subtitle">o</li>
+                    <hr>
+                    <li>o</li>
+                    <li class="subtitle">o</li>
+                </ul>
+            </div>
+            <div id="p">
+                <ul> P
+                    <li>p</li>
+                    <li class="subtitle">p</li>
+                    <hr>
+                    <li>p</li>
+                    <li class="subtitle">p</li>
+                </ul>
+            </div>
+            <div id="q">
+                <ul> Q
+                    <li>q</li>
+                    <li class="subtitle">q</li>
+                    <hr>
+                    <li>q</li>
+                    <li class="subtitle">q</li>
+                </ul>
+            </div>
+            <div id="r">
+                <ul> R
+                    <li>r</li>
+                    <li class="subtitle">r</li>
+                    <hr>
+                    <li>r</li>
+                    <li class="subtitle">r</li>
+                </ul>
+            </div>
+            <div id="s">
+                <ul> S
+                    <li>s</li>
+                    <li class="subtitle">s</li>
+                    <hr>
+                    <li>s</li>
+                    <li class="subtitle">s</li>
+                </ul>
+            </div>
+            <div id="t">
+                <ul> T
+                    <li>t</li>
+                    <li class="subtitle">t</li>
+                    <hr>
+                    <li>t</li>
+                    <li class="subtitle">t</li>
+                </ul>
+            </div>
+            <div id="u">
+                <ul> U
+                    <li>u</li>
+                    <li class="subtitle">u</li>
+                    <hr>
+                    <li>u</li>
+                    <li class="subtitle">u</li>
+                </ul>
+            </div>
+            <div id="v">
+                <ul> V
+                    <li>v</li>
+                    <li class="subtitle">v</li>
+                    <hr>
+                    <li>v</li>
+                    <li class="subtitle">v</li>
+                </ul>
+            </div>
+            <div id="w">
+                <ul> W
+                    <li>w</li>
+                    <li class="subtitle">w</li>
+                    <hr>
+                    <li>w</li>
+                    <li class="subtitle">w</li>
+                </ul>
+            </div>
+            <div id="x">
+                <ul> X
+                    <li>x</li>
+                    <li class="subtitle">x</li>
+                    <hr>
+                    <li>x</li>
+                    <li class="subtitle">x</li>
+                </ul>
+            </div>
+            <div id="y">
+                <ul> Y
+                    <li>y</li>
+                    <li class="subtitle">y</li>
+                    <hr>
+                    <li>y</li>
+                    <li class="subtitle">y</li>
+                </ul>
+            </div>
+            <div id="z">
+                <ul> Z
+                    <li>z</li>
+                    <li class="subtitle">z</li>
+                    <hr>
+                    <li>z</li>
+                    <li class="subtitle">z</li>
+                </ul>
+            </div>
+    </div>
+    <nav class="footer">
+
+        <div>
+            <a href="#">
+                    <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA1MTIgNTEy%0D%0AIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30N%0D%0ACjwvc3R5bGU+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ5MS4zLDIzNS4z%0D%0ASDIwLjdDOS4zLDIzNS4zLDAsMjQ0LjYsMCwyNTZzOS4zLDIwLjcsMjAuNywyMC43aDQ3MC42YzEx%0D%0ALjQsMCwyMC43LTkuMywyMC43LTIwLjcNCgkJCUM1MTIsMjQ0LjYsNTAyLjcsMjM1LjMsNDkxLjMs%0D%0AMjM1LjN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9%0D%0AIk00OTEuMyw3OC40aC0yMjVjLTExLjQsMC0yMC43LDkuMy0yMC43LDIwLjdzOS4zLDIwLjcsMjAu%0D%0ANywyMC43aDIyNWMxMS40LDAsMjAuNy05LjMsMjAuNy0yMC43DQoJCQlTNTAyLjcsNzguNCw0OTEu%0D%0AMyw3OC40eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBk%0D%0APSJNMjQ1LjcsMzkyLjJoLTIyNUM5LjMsMzkyLjIsMCw0MDEuNSwwLDQxMi45czkuMywyMC43LDIw%0D%0ALjcsMjAuN2gyMjVjMTEuNCwwLDIwLjctOS4zLDIwLjctMjAuNw0KCQkJUzI1Ny4xLDM5Mi4yLDI0%0D%0ANS43LDM5Mi4yeiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K" alt="">    
+            </a> 
+        </div>
+        <ul>
+            <li><a href="#">E</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">R</a></li>
+            <li><a href="#">C</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
